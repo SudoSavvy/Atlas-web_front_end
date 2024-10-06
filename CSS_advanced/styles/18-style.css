@@ -99,7 +99,7 @@ select {
     --nav-item-font-size: var(--font-size-medium);
     --nav-item-letter-spacing: 0.4rem; /* 4% of root element */
     --nav-item-display: inline-block;
-    --nav-item-margin: 3rem 0 0; /* 3 times the root element on the bottom and 0 elsewhere */
+    --nav-item-margin: 0 0 3rem; /* 3 times the root element on the bottom and 0 elsewhere */
     --nav-item-link-hover: var(--color-primary);
 }
 
@@ -214,6 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 nav {
     margin: 0; /* Set margin on all sides to 0 */
     padding: 0; /* Set padding on all sides to 0 */
+    list-style: none; /* Set list style to none */
     text-align: center; /* Center align the text */
 }
 
