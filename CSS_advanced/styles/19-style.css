@@ -243,7 +243,7 @@ nav .nav-link:hover {
     color: var(--nav-item-link-hover); /* Set foreground color on hover */
 }
 
-/* New styles based on specifications */
+/* New styles based on specifications*/
 
 /* For all ul with the class row */
 .row {
@@ -276,11 +276,4 @@ nav .nav-link:hover {
 /* For all ul tags in the footer class */
 .footer ul {
     text-align: right; /* Align text to the right */
-}
-
-/* New rule to create a new row after each instance of the class row */
-.row::after {
-    content: ""; /* No content */
-    display: table; /* Display as a table */
-    clear: both; /* Clear floating elements on either side */
 }
