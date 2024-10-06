@@ -1,0 +1,49 @@
+/* Define custom properties on the root element */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    
+    /* Define custom font-family properties */
+    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Sets the foreground (text) color for the body using the text-color variable */
+body {
+    color: var(--text-color);
+    font-family: var(--font-family-base); /* Apply font-family-base to body */
+}
+
+/* Sets the foreground (text) color for all anchor (a) elements using the text-color variable */
+a {
+    color: var(--text-color);
+}
+
+/* Hides all elements with the class visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Sets the foreground (text) color for elements with the class card-category using the color-primary variable */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Sets the foreground (text) color for elements with the class section-tagline using the color-primary variable */
+.section-tagline {
+    color: var(--color-primary);
+}
+
+/* Target all heading levels (h1 to h6) and set their font-family to font-family-title */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
+
+/* This declaration ensures smooth scrolling behavior for the entire page */
+html {
+    scroll-behavior: smooth;
+}
