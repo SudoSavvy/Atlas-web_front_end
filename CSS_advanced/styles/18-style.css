@@ -160,7 +160,7 @@ a:active {
 /* Target the container class */
 .container {
     width: 960px; /* Set width to 960px */
-    margin: 0 auto; /* Evenly distribute margins on both sides */
+    margin: 0; /* Evenly distribute margins on both sides */
 }
 
 /* Target the section class */
