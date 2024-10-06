@@ -1,0 +1,161 @@
+/* Normalize.css version 8.0.1 - https://necolas.github.io/normalize.css/ */
+
+/* Universal box-sizing rule */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Document default styles */
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections */
+body {
+    margin: 0;
+}
+
+/* Grouping content */
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 2 */
+    overflow: visible; /* 3 */
+}
+
+/* Text-level semantics */
+a {
+    background-color: transparent; /* 1 */
+}
+
+/* Images */
+img {
+    border-style: none; /* 1 */
+}
+
+/* Form elements */
+button,
+input,
+select {
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 2 */
+    line-height: inherit; /* 3 */
+}
+
+/* Others... */
+
+/* END of Normalize.css */
+
+/* Define custom properties on the root element */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    
+    /* Define custom font-family properties with new fonts */
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /* Define custom font-size properties */
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    /* Define custom font-weight properties */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Define custom line-height properties */
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+
+    /* Define custom property for section header alignment */
+    --section-header-align: center; /* Set section header alignment to center */
+    
+    /* Define custom property for section tagline transformation */
+    --section-tagline-transform: uppercase; /* Set section tagline transformation to uppercase */
+
+    /* Define custom properties for section title */
+    --section-title-margin: 0; /* Set section title margin to 0 */
+    --section-title-color: var(--color-black); /* Set section title color to color-black */
+}
+
+/* All fonts in the html element should be at 62.5% of their normal size */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth; /* Keep the smooth scrolling from previous styles */
+}
+
+/* Any fonts in the body should have their size set to font-size-medium and font-weight-regular */
+body {
+    color: var(--text-color);
+    font-family: var(--font-family-base); /* Apply updated font-family-base to body */
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular); /* Set boldness to regular */
+    line-height: var(--line-height-base); /* Set line-height-base as the minimum height for line boxes */
+}
+
+/* Sets the foreground (text) color for all anchor (a) elements containing a hyperlink using the text-color variable and removes text decoration */
+a:link {
+    color: var(--text-color);
+    text-decoration: none; /* Remove any text decoration from anchor elements */
+}
+
+/* Target the visited state for the link */
+a:visited {
+    font-style: italic; /* Italicize the text */
+}
+
+/* Target the hover state for the link */
+a:hover {
+    text-decoration: underline; /* Underline the link when hovered */
+}
+
+/* Target the active state for the link */
+a:active {
+    background-color: var(--color-light-grey); /* Set the background color to color-light-grey */
+}
+
+/* Hides all elements with the class visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Sets the foreground (text) color for elements with the class card-category using the color-primary variable */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Sets the foreground (text) color for elements with the class section-tagline using the color-primary variable */
+.section-tagline {
+    color: var(--color-primary);
+    font-family: var(--font-family-title); /* Set font-family to font-family-title */
+    text-transform: var(--section-tagline-transform); /* Apply text transformation */
+    font-weight: var(--font-weight-bold); /* Set font weight to bold */
+}
+
+/* New section-title class declaration */
+.section-title {
+    font-family: var(--font-family-title); /* Set font-family to font-family-title */
+    font-size: var(--font-size-xx-large); /* Set font size to font-size-xx-large */
+    font-weight: var(--font-weight-bold); /* Set font weight to bold */
+    margin: var(--section-title-margin); /* Use section-title-margin for margin */
+    color: var(--section-title-color); /* Use section-title-color for text color */
+}
+
+/* Sets the horizontal alignment for section-header class */
+.section-header {
+    text-align: var(--section-header-align); /* Set horizontal alignment using custom property */
+}
+
+/* Target all heading levels (h1 to h6) and set their font-family to font-family-title and font-weight to bold */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title); /* Apply updated font-family-title to headings */
+    font-weight: var(--font-weight-bold); /* Set boldness to bold */
+}
