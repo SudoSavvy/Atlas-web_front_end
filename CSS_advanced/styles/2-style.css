@@ -1,0 +1,29 @@
+/* Sets the foreground (text) color for the body */
+body {
+    color: #161616;
+}
+
+/* Sets the foreground (text) color for all anchor (a) elements */
+a {
+    color: #161616;
+}
+
+/* Hides all elements with the class visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Sets the foreground (text) color for elements with the class card-category */
+.card-category {
+    color: #D73953;
+}
+
+/* Sets the foreground (text) color for elements with the class section-tagline */
+.section-tagline {
+    color: #D73953;
+}
+
+/* This declaration ensures smooth scrolling behavior for the entire page */
+html {
+    scroll-behavior: smooth;
+}
