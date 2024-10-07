@@ -248,7 +248,7 @@ nav .nav-link:hover {
 /* For all classes starting with col- */
 [class^="col-"] {
     float: left; /* Float all col- classes to the left */
-    padding: calc(0.5 * 1rem); /* Set padding to half of the root element */
+    padding: calc(0.5 * 1rem); /* Set padding to half of the root element size */
 }
 
 /* Specific styles for individual col classes removed for brevity */
