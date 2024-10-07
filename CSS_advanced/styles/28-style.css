@@ -489,3 +489,25 @@ footer a:hover {
         text-align: center; /* Center text on smaller screens */
     }
 }
+
+/* Define custom properties in the root */
+:root {
+    --header-padding: 2rem; /* Set your desired padding value */
+}
+
+/* Header styles */
+header {
+    padding: var(--header-padding); /* Set padding using custom property */
+}
+
+/* Other header-related styles */
+.header-logo {
+    position: var(--header-logo-position);
+}
+
+.header-logo a {
+    display: var(--header-logo-link-display);
+    position: var(--header-logo-link-position);
+    top: var(--header-logo-link-top);
+    left: var(--header-logo-link-left);
+}
